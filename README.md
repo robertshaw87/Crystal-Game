@@ -1,16 +1,15 @@
-# Word Guess Game
+# Crystal Game
 Game made with BootstrapCDN v4.1.0
 
-Guess the chosen word one letter at a time! Your guesses are limited, so choose wisely!
+The crystal core is overloading! Use the gems to syphon power from it until it stabilizes. Be care not to overdraw the energy! If the power level drops below 0, the crystal core will be unsalvageable.
 
 ## Getting Started
 
-Open up the [project link](https://robertshaw87.github.io/Word-Guess-Game/) and you should be able to see the example webpage shown below:
+Open up the [project link](https://robertshaw87.github.io/Crystal-Game/) and you should be able to see the example webpage shown below:
 
-![Word Guess Game](assets/images/readme-game.png "Word Guess Game")
+![Crystal Game](assets/images/readme-game.png "Crystal Game")
 
-Simply press the the letter you want to guess on your keyboard. Try to complete the word shown on screen. If you run out of guesses, you lose! The game will keep track of your wins and losses.
-
+Simply click one of the gems to reduce the power of the crystal. Your goal is to reduce the crystal to 0 power without letting it fall into the negatives. Beware! The gems will syphon a random amount of power each time you reset!
 ### Prerequisites
 
 You need to have a modern browser able to handle html5, javascript, and css. 
