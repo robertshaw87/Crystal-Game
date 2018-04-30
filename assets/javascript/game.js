@@ -63,18 +63,28 @@ $(document).ready(function() {
         $("#crystal-core-text").text(crystalValue);
     }
 
-    function playerMessage(str) {
-        $("#player-message").text(str);
-    }
-
     gameReset();
 
     $(".gem").on("click", function(){
-        playerMessage(" ");
+        $("#player-message").empty()
+        console.log($(this));
+        crystalValue -= parseInt($(this).attr("value"));
+
+        if (crystalValue === 0) {
+            $("#player-message").text("You won! Congratulations!");
+            wins+=1;
+            gameReset();
+        } else if (crystalValue <= 0) {
+            $("#player-message").text("You lost! You drained too much energy from the crystal!");
+            losses+=1;
+            gameReset();
+        } else {
+            updateDisplays();
+        }
     });
 
     $("#reset-button").on("click", function(){
-        playerMessage("You gave up on the puzzle. Good luck on this one!");
+        $("#player-message").text("You gave up on the puzzle. Good luck on this one!");
         losses += 1;
         gameReset();
     });
