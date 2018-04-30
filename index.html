@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Audiowide|Cinzel+Decorative" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Stylish|Yeon+Sung" rel="stylesheet">
 
   <!-- jQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,13 +29,57 @@
   </header>
 
   <main class="container text-center">
-  </main>
+  <div class="row mt-5">
+    <div class="col-md-4 col-sm-3 col-2"></div>
+    <div class="col-md-4 col-sm-6 col-8" id="crystal-core">
+      <img id="crystal-img" src="assets/images/crystal.png" alt="Crystal Core" style="width:100%;">
+      <div class="centered"><h2 id="crystal-core-text">122</h1></div>
+    </div>
+    <div class="col-md-4 col-sm-3 col-2"></div>
+  </div>
 
-  <!-- add song to be played -->
-  <audio autoplay loop id="fireflySong">
-    <source src="assets/music/firefly.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
+  <div class="row mt-5">
+      <div class="col"></div>
+      <div class="col-md-6 col-8">
+        <div class="row" id="gem-row">
+
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+
+  <div class="row mt-5">
+    <h3 class="col-md-8 col-6 text-light" id="player-message">blah lorem ipsum placeholder blah lorem ipsum</h3>      
+    <div class="col-md-4 col-6">
+      <div class="row">
+        <div class="card col-12 text-center score-card">
+          <div class="card-body text-light">
+            <div class="card-title">Wins</div>
+            <div class="card-text" id="wins-text">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="card col-12 text-center score-card">
+            <div class="card-body text-light">
+              <div class="card-title">Losses</div>
+              <div class="card-text" id="losses-text">0</div>
+            </div>
+          </div>      
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+      <div class="col"></div>
+      <button type="button" class="btn btn-dark btn-lg col-md-3 col-6" id="reset-button">Give Up</button>
+      <div class="col"></div>
+  </div>
+  <div class="row mt-5">
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </main>
 
   <!-- My Javascript -->
   <script src="assets/javascript/game.js"></script>
