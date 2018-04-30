@@ -1,10 +1,11 @@
 $(document).ready(function() {
+    // initialize variables
     var wins=0;
     var losses=0;
     var crystalValue=0;
     // number of gems to generate
     var numGems=4;
-    // used to store the order of the gem images
+    // used to store the order of the gem images, order will be randomized later
     var gemImages = ["0","1", "2", "3"];
 
     // returns a random integer between 0 and the argument(inclusive)
