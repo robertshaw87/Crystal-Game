@@ -51,7 +51,7 @@ $(document).ready(function() {
             tempGem.attr("class", "col-3 gem");
             tempGem.attr("id","gem"+i);
             tempGem.attr("value", gemArray[i]);
-            tempGem.html('<img id="crystal-img" src="assets/images/gem'+gemImages[i]+'.png" alt="gem'+gemImages[i]+'" style="width:100%;">');
+            tempGem.html('<img class="gem-image" id="gem'+gemImages[i]+'-img" src="assets/images/gem'+gemImages[i]+'.png" alt="gem'+gemImages[i]+'" style="width:100%;">');
             $("#gem-row").append(tempGem);
         }
     }

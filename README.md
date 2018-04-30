@@ -1,5 +1,4 @@
 # Crystal Game
-Game made with BootstrapCDN v4.1.0
 
 The crystal core is overloading! Use the gems to syphon power from it until it stabilizes. Be care not to overdraw the energy! If the power level drops below 0, the crystal core will be unsalvageable.
 
@@ -35,7 +34,9 @@ There are messages logged to the console if you want to see some of the debuggin
 
 * [BootstrapCDN v4.1.0](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - The web framework used
 
-* [jQuery v3.3.1](http://jquery.com/)
+* [jQuery v3.3.1](http://jquery.com/) - Java library for DOM interaction
+
+* [Google Fonts](https://fonts.google.com/) - Font repository
 
 ## Authors
 
