@@ -6,6 +6,10 @@ body {
     opacity: .9;
 }
 
+header {
+    font-family: 'Yeon Sung', cursive;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 .container {
     position: relative;
     text-align: center;
@@ -18,10 +22,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#crystal-core-text {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 60px;
+}
+
+.gem {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 40px;
+}
+
 #player-message {
     background-color: rgba(0, 0, 0, 0.5);
     font-family: 'Yeon Sung', cursive;
-    font-size: 36px;
+    font-size: 26px;
+    position: relative;
 }
 
 .score-card {
@@ -29,4 +44,9 @@ body {
     font-family: 'Stylish', sans-serif;
     font-size: 30px;
     line-height: 25px;
+}
+
+#reset-button {
+    font-family: 'Stylish', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
 }
