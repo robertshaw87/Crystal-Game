@@ -23,10 +23,10 @@ $(document).ready(function() {
 
         return arr;
     }
-// game reset function
-//  reset values to default
-    // generate random value for the crystal
-    // generate 4 new gems with one guaranteed to have a value of 1
+    // game reset function
+    //  reset values to default
+        // generate random value for the crystal
+        // generate 4 new gems with one guaranteed to have a value of 1
     function gameReset() {
         $("#gem-row").empty();
         crystalValue = (randInt(101) +19);
@@ -56,44 +56,40 @@ $(document).ready(function() {
         }
     }
 
-// update displays of values
+    // update displays of values
     function updateDisplays() {
         $("#wins-text").text(wins);
         $("#losses-text").text(losses);
         $("#crystal-core-text").text(crystalValue);
     }
 
+    // reset the game upon page load
     gameReset();
 
-    $(".gem").on("click", function(){
+    // listen to click on gems
+    $("#gem-row").on("click", ".gem", function(){
         $("#player-message").empty()
-        console.log($(this));
+        // subtract value of clicked gem from crystal
         crystalValue -= parseInt($(this).attr("value"));
-
+        // if crystal is 0, win
         if (crystalValue === 0) {
-            $("#player-message").text("You won! Congratulations!");
             wins+=1;
             gameReset();
+            $("#player-message").text("You won! Congratulations!");
+        // if crystal is less than 0, lose
         } else if (crystalValue <= 0) {
-            $("#player-message").text("You lost! You drained too much energy from the crystal!");
             losses+=1;
             gameReset();
+            $("#player-message").text("You lost! You drained too much energy from the crystal!");
+            // else, update crystal value
         } else {
             updateDisplays();
         }
     });
-
+    // if reset button clicked, reset values to default and generate a new puzzle (counts as a loss)
     $("#reset-button").on("click", function(){
-        $("#player-message").text("You gave up on the puzzle. Good luck on this one!");
         losses += 1;
         gameReset();
+        $("#player-message").text("You gave up on the puzzle. Good luck on this one!");        
     });
-
-// listen to click on gems
-// subtract value of clicked gem from crystal
-// if crystal is 0, win
-// if crystal is less than 0, lose
-// else, update crystal value
-
-// if reset button clicked, reset values to default
 });
