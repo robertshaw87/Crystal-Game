@@ -44,6 +44,10 @@ There are messages logged to the console if you want to see some of the debuggin
 
 * [Google Fonts](https://fonts.google.com/) - Font repository
 
+## Challenges
+
+While I didn't have much trouble with the logic and dynamic generation during the creation of this app, I did find a few hiccups in styling. I layered too many animations on top of each other and the end result is jumpy and twitchy instead of smooth. I am quite satisfied with the actual feel of the page though.
+
 ## Authors
 
 * **Robert Shaw** - *Initial work* - [robertshaw87](https://github.com/robertshaw87)
